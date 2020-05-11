@@ -1,0 +1,17 @@
+(define (ave x)
+   (div (sum x) (len x))
+)
+
+(define (sum y)
+   (if (null y)
+       0
+       (plus (first y) (sum (rest y)))
+   )
+)
+
+(define (len z)
+   (if (null z)
+       0
+       (plus 1 (len (rest z)))
+   )
+)
